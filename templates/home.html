@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FWI Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Data to Predict Fire Weather Index (FWI)</h1>
+    <form action="/predict" method="post">
+        <div><label>Temperature: <input type="text" name="Temperature" required></label></div>
+        <div><label>Relative Humidity (RH): <input type="text" name="RH" required></label></div>
+        <div><label>Wind Speed (Ws): <input type="text" name="Ws" required></label></div>
+        <div><label>Rain (mm): <input type="text" name="Rain" required></label></div>
+        <div><label>FFMC: <input type="text" name="FFMC" required></label></div>
+        <div><label>DMC: <input type="text" name="DMC" required></label></div>
+        <div><label>ISI: <input type="text" name="ISI" required></label></div>
+        <div><label>Classes: <input type="text" name="Classes" required></label></div>
+        <div><label>Region: <input type="text" name="Region" required></label></div>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
